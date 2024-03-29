@@ -1,0 +1,284 @@
+body {
+    box-sizing: border-box;
+    margin: 0;
+    padding: 0;
+    font-family: Helvetica;
+    overflow-x: hidden;
+}
+
+html {
+    font-size: 1.5rem;
+}
+
+/* navbar */
+
+nav {
+    display: flex;
+    justify-content: space-between;
+    padding: 0 136px;
+    padding-top: 24px;
+    background-color: #F1F3FF;
+}
+
+nav ul {
+    display: flex;
+    flex-direction: row;
+}
+
+
+nav ul a {
+    text-decoration: none;
+    color: black;
+    padding: 10px 32px;
+}
+
+.blue-box {
+    width: 130px;
+    height: 50px;
+    background-color: darkblue;
+    margin-top: 10px;
+}
+
+.button {
+    color: white;
+    background-color: limegreen;
+    padding: 10px 32px;
+    border: none;
+    border-radius: 4px;
+    -webkit-border-radius: 4px;
+    -moz-border-radius: 4px;
+    -ms-border-radius: 4px;
+    -o-border-radius: 4px;
+}
+
+h1 {
+    font-weight: 700;
+}
+
+/* main section */
+
+.main-section {
+    background-color: #F1F3FF;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+
+.main-section .words {
+    margin-left: 136px;
+    margin-right: 32px;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: flex-start;
+}
+
+.main-section .words p {
+    padding-right: 170px;
+}
+
+.picture {
+    position: relative;
+}
+
+.picture img {
+    position: relative;
+    transform: scaleX(-1);
+    -webkit-transform: scaleX(-1);
+    -moz-transform: scaleX(-1);
+    -ms-transform: scaleX(-1);
+    -o-transform: scaleX(-1);
+}
+
+.picture .car-background {
+    position: absolute;
+    top: 255px;
+    right: 0px;
+    width: 920px;
+    height: 350px;
+    background-color: darkblue;
+    border-radius: 80px 0 0 0;
+    -webkit-border-radius: 80px 0 0 0;
+    -moz-border-radius: 80px 0 0 0;
+    -ms-border-radius: 80px 0 0 0;
+    -o-border-radius: 80px 0 0 0;
+}
+
+/* our service section */
+
+.our-service-section {
+    margin: 100px 200px;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+}
+
+.our-service-section .girl-picture {
+    width: 120%;
+}
+
+.our-service-section img {
+    width: 4%;
+    margin-right: 10px;
+}
+
+.our-service-section ul li {
+    padding: 0.4rem 0;
+    list-style: none;
+}
+
+.checklist {
+    list-style-type: none;
+    padding-left: 0;
+}
+
+.checklist li {
+    position: relative;
+    padding-left: 35px;
+    margin-bottom: 10px;
+}
+
+/* why us section */
+
+.why-us-section {
+    margin: 100px 196px;
+}
+
+.why-us-section > * {
+    margin: 40px 0;
+}
+
+.why-us-section h3 {
+    font-size: 120%;
+    font-weight: 700;
+}
+
+.why-us-section .boxes  {
+    display: flex;
+}
+
+.why-us-section .boxes > * {
+    border: 2px solid grey;
+    padding: 20px 30px;
+    margin: 0 10px;
+    border-radius: 5%;
+    -webkit-border-radius: 5%;
+    -moz-border-radius: 5%;
+    -ms-border-radius: 5%;
+    -o-border-radius: 5%;
+}
+
+.why-us-section img {
+    margin-bottom: 10px;
+    width: 10%;
+}
+
+.why-us-section .box2 img, .why-us-section .box3 img{
+    width: 10%;
+}
+
+/* testimonial section */
+
+.testimonial-section {
+    margin-bottom: 50px;
+}
+
+.box {
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    padding: 50px 70px;
+}
+
+.testimonial-section img  {
+    width: 120px !important;
+}
+
+.testimonial-section .words {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    padding: 0 20px;
+}
+
+.testimonial-section .words strong {
+    margin-top: 0;
+}
+
+
+/* getting started section */
+
+.getting-started-section {
+    background-color: darkblue;
+    margin: 0 90px;
+    color: white;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    padding: 100px 0;
+}
+
+.getting-started-section p {
+    margin: 0 400px;
+    text-align: center;
+}
+
+.getting-started-section > *:not(.button) {
+    padding: 50px 0;
+}
+
+.getting-started-section button {
+    margin-top: 50px;
+}
+
+/* FAQ section */
+
+.FAQ-section {
+    display: flex;
+    justify-content: space-around;
+    margin: 0 100px;
+    margin-top: 200px;
+}
+
+.FAQ-section .right > *{
+    margin: 30px 0;
+}
+
+.FAQ-section .right *:nth-child(1){
+    margin-top: 0;
+}
+
+
+
+/* footer */
+
+footer {
+    display: flex;
+    justify-content: space-around;
+    margin: 80px 100px;
+    margin-right: 300px;
+}
+
+footer .box1 p:nth-child(1) {
+    margin-bottom: 0;
+}
+
+footer .box1 p:nth-child(2) {
+    margin-top: 0;
+}
+
+footer .box2 > * {
+    font-weight: 600;
+}
+
+/* .box3, .box3 .social-media {
+    padding-right: 100px;
+    border: 2px solid lime;
+} */
+
+.box3 .social-media {
+    display: flex;
+    justify-content: space-between;
+}
+
