@@ -20,7 +20,7 @@
 </head>
 
 <body>
-    <nav>
+    <nav class="desktop">
         <div class="blue-box"></div>
         <ul>
             <a href=".">Our Services</a>
@@ -29,6 +29,26 @@
             <a href=".">FAQ</a>
             <button class="button">Register</button>
         </ul>
+    </nav>
+
+
+    <div class="off-screen-menu">
+        <ul>
+            <li><strong>BCR</strong></li>
+            <li>Our Services</li>
+            <li>Why Us</li>
+            <li>Testimonial</li>
+            <li>FAQ</li>
+            <button class="button">Register</button>
+        </ul>
+    </div>
+
+    <nav class="mobile">
+        <div class="ham-menu">
+            <span></span>
+            <span></span>
+            <span></span>
+        </div>
     </nav>
 
     <div class="main-section">
@@ -104,7 +124,7 @@
                                 sed do eiusmod”</p>
                             <strong>John Dee 32, Bromo</strong>
                         </div>
-                        
+
                     </div>
                 </div>
                 <div class="item">
@@ -118,7 +138,7 @@
                                 sed do eiusmod”</p>
                             <strong>John Dee 32, Bromo</strong>
                         </div>
-                
+
                     </div>
                 </div>
             </div>
@@ -241,16 +261,27 @@
             nav: true,
             responsive: {
                 0: {
-                    items: 2.2
+                    items: 1
                 },
                 600: {
-                    items: 2.2
+                    items: 1
                 },
                 1000: {
-                    items: 2.2
+                    items: 1
                 }
             }
         })
+    </script>
+
+    <script>
+        const hamMenu = document.querySelector(".ham-menu");
+
+            const offScreenMenu = document.querySelector(".off-screen-menu");
+
+            hamMenu.addEventListener("click", () => {
+                hamMenu.classList.toggle("active");
+                offScreenMenu.classList.toggle("active");
+            });
     </script>
 </body>
 
