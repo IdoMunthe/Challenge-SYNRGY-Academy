@@ -348,8 +348,8 @@ footer .box2 > * {
 
     .picture .car-background {
         top: 150px;
-        right: -80px;
-        width: 600px;
+        right: 0px;
+        width: 520px;
         height: 180px;
     }
 
